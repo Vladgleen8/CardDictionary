@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
+import InputForm from "./components/Input-form/InputForm";
+import Card from "./components/Card/Card";
 import './App.css';
 
+
 function App() {
+  const [cardInfo, setCardInfo] = useState([{
+    rus: 'привет',
+    eng: 'hello',
+    theme: 'общение',
+  }])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>English-Russian Card Dictionary</h1>
+      <InputForm />
+      <Card />
     </div>
   );
 }
 
 export default App;
+
+
+/*
+
+  1/ есть массив с обхектоами, куда из формы должен добавлять новый объект 
+
+*/
