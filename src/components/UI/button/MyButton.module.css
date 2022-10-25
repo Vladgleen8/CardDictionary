@@ -1,0 +1,14 @@
+.myBtn {
+    padding: 5px 15px;
+    color: teal;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid teal;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.myBtn:disabled {
+    color: gray;
+    border: 1px solid grey;
+}

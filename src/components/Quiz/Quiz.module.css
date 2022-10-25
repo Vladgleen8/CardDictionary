@@ -1,0 +1,69 @@
+.quiz {
+    border: 2px rgb(111, 226, 120) solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: grid;   
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-areas:
+    "timer cardWrapper";
+    column-gap: 20px;
+    /* row-gap: 20px; */
+      /* grid-template-rows: 80px 200px; */
+}
+
+.timer {
+    grid-area: timer;
+    border: 2px solid rgb(111, 226, 120);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardWrapper {
+    grid-area: cardWrapper;
+    display: grid;
+    /* gap: 10px 20px; */
+    grid-template-areas: 
+    "word word"
+    "quizInput quizButton";
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.word {
+    grid-area: word;
+    border: 2px solid rgb(111, 226, 120);
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 255, 237);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.score { 
+    grid-area: score;
+}
+
+.quizInput {
+    grid-area: quizInput;
+    border-radius: 6px;
+    border: 1px solid rgb(111, 226, 120);
+    /* box-shadow:0 0 15px 4px rgba(0,0,0,0.06); */
+}
+
+.quizInput:focus {
+    outline: none;
+    border: 2px solid rgb(111, 226, 120);
+}
+
+.quizButton {
+    grid-area: quizButton;
+}

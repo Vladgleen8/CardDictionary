@@ -1,0 +1,12 @@
+.trainingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    border: 2px solid rgb(111, 226, 120);
+    border-radius: 12px;
+    padding: 10px 20px;
+    user-select: none;
+}
+

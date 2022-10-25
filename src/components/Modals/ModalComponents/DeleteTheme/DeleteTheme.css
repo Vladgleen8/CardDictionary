@@ -1,0 +1,17 @@
+.deleteFormContainer {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.deleteItem {
+    user-select: none;
+    list-style-type:none;
+
+}
+
+.deleteItemClicked {
+    border: 1px solid teal;
+}
