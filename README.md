@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-![](https://github.com/vladgleen8/CardDictionary/ScreenRecorderProject1.gif)
+![](https://github.com/Vladgleen8/CardDictionary/blob/main/gifs/ScreenRecorderProject1.gif)
 
 In the project directory, you can run:
 
