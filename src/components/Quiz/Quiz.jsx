@@ -16,7 +16,7 @@ export function Quiz({ cards }) {
             changeTimeout();
         }
     }, [finished]);
-
+    
     useEffect(() => {
         if (timer === 0) {
             handleClick();
@@ -24,6 +24,7 @@ export function Quiz({ cards }) {
         if (finished) {
             clearInterval(timerId);
         }
+        // eslint-disable-next-line 
     }, [timer]);
 
     function changeTimeout() {

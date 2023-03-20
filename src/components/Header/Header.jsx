@@ -11,9 +11,9 @@ export function Header({ setCardModal, setThemeModal, setDeleteThemeModal }) {
       >
         Add Card
       </MyButton>
-      <MyButton onClick={() => setThemeModal(true)}>Add Theme</MyButton>
+      <MyButton onClick={() => setThemeModal(true)}>Add Category</MyButton>
       <MyButton onClick={() => setDeleteThemeModal(true)}>
-        Delete Theme
+        Delete Сategory
       </MyButton>
     </div>
   );

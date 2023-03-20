@@ -60,7 +60,7 @@ export function AddCard({ themes, updateCardsInfo, setCardModal, cardModal }) {
                 </div>
                 <div className="inputBlock">
                     <label className="inputWord" htmlFor="theme">
-                        Тема
+                        Category
                     </label>
                     <select
                         value={formValues.theme}

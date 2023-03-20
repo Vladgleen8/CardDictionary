@@ -8,56 +8,58 @@ import { CardsViewSettings } from "./CardsViewSettings/CardsViewSettings";
 import { v4 as uuidv4 } from "uuid";
 import "./App.css";
 
-// const initialCards = [
-//     {
-//         id: uuidv4(),
-//         eng: "snow",
-//         rus: "снег",
-//         theme: "погода",
-//     },
-//     {
-//         id: uuidv4(),
-//         eng: "cloud",
-//         rus: "облачно",
-//         theme: "погода",
-//     },
-//     {
-//         id: uuidv4(),
-//         eng: "shit",
-//         rus: "хуйня",
-//         theme: "мат",
-//     },
-//     {
-//         id: uuidv4(),
-//         eng: "hi",
-//         rus: "привет",
-//         theme: "общение",
-//     },
-//     {
-//         id: uuidv4(),
-//         eng: "bye",
-//         rus: "пока",
-//         theme: "общение",
-//     },
-//     {
-//         id: uuidv4(),
-//         eng: "whats up",
-//         rus: "чо как",
-//         theme: "общение",
-//     },
-// ];
+const initialCards = [
+    {
+        id: uuidv4(),
+        eng: "snow",
+        rus: "снег",
+        theme: "погода",
+    },
+    {
+        id: uuidv4(),
+        eng: "cloud",
+        rus: "облачно",
+        theme: "погода",
+    },
+    {
+        id: uuidv4(),
+        eng: "shit",
+        rus: "хуйня",
+        theme: "мат",
+    },
+    {
+        id: uuidv4(),
+        eng: "hi",
+        rus: "привет",
+        theme: "общение",
+    },
+    {
+        id: uuidv4(),
+        eng: "bye",
+        rus: "пока",
+        theme: "общение",
+    },
+    {
+        id: uuidv4(),
+        eng: "whats up",
+        rus: "чо как",
+        theme: "общение",
+    },
+];
 
-// const initialThemes = ["погода", "мат", "общение"];
+const initialThemes = ["погода", "мат", "общение"];
 
 function App() {
     const [cardsInfo, setCardsInfo] = useState(
-        JSON.parse(localStorage.getItem("cards"))
+        initialCards
     );
+    //JSON.parse(localStorage.getItem("cards"))
     const [themeModal, setThemeModal] = useState(false);
     const [cardModal, setCardModal] = useState(false);
     const [themes, setThemes] = useState(
-        JSON.parse(localStorage.getItem("themes"))
+        initialThemes
     );
+    //JSON.parse(localStorage.getItem("themes"))
     const [selectedSort, setSelectedSort] = useState("");
     const [deleteThemeModal, setDeleteThemeModal] = useState(false);
     const [mode, setMode] = useState("allCards");
